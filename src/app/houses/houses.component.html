@@ -1,0 +1,25 @@
+
+<div class="content" [ngBusy]="loading">
+
+  <table class="table table-bordered table-hover">
+    <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Region</th>
+      <th>Words</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let house of houses let i = index">
+      <th scope="row">{{i+1}}</th>
+      <td>{{house.name}}</td>
+      <td>{{house.region}}</td>
+      <td>{{house.words}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
